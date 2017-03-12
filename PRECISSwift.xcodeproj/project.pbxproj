@@ -6,11 +6,24 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FFCE199A1E75F060001C18C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19991E75F060001C18C4 /* Profile.swift */; };
+		FFCE199B1E75F060001C18C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19991E75F060001C18C4 /* Profile.swift */; };
+		FFCE199C1E75F060001C18C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19991E75F060001C18C4 /* Profile.swift */; };
+		FFCE199D1E75F060001C18C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19991E75F060001C18C4 /* Profile.swift */; };
+		FFCE199F1E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
+		FFCE19A01E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
+		FFCE19A11E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
+		FFCE19A21E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FFCE19231E75E088001C18C4 /* PRECISSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRECISSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCE19361E75E164001C18C4 /* PRECISSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRECISSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCE19431E75E17C001C18C4 /* PRECISSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRECISSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCE19501E75E195001C18C4 /* PRECISSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRECISSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCE19991E75F060001C18C4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeScalarExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +91,28 @@
 		FFCE192F1E75E10C001C18C4 /* PRECISSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FFCE19971E75F04A001C18C4 /* Core */,
+				FFCE19981E75F04E001C18C4 /* Extensions */,
 			);
 			path = PRECISSwift;
+			sourceTree = "<group>";
+		};
+		FFCE19971E75F04A001C18C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FFCE19991E75F060001C18C4 /* Profile.swift */,
+			);
+			name = Core;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFCE19981E75F04E001C18C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFCE192B1E75E088001C18C4 /* Build configuration list for PBXNativeTarget "PRECISSwift iOS" */;
 			buildPhases = (
+				FFCE19A31E75F097001C18C4 /* Lint Sources */,
 				FFCE191E1E75E088001C18C4 /* Sources */,
 				FFCE191F1E75E088001C18C4 /* Frameworks */,
 				FFCE19201E75E088001C18C4 /* Headers */,
@@ -138,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFCE193B1E75E165001C18C4 /* Build configuration list for PBXNativeTarget "PRECISSwift macOS" */;
 			buildPhases = (
+				FFCE19A41E75F0CE001C18C4 /* Lint Sources */,
 				FFCE19311E75E164001C18C4 /* Sources */,
 				FFCE19321E75E164001C18C4 /* Frameworks */,
 				FFCE19331E75E164001C18C4 /* Headers */,
@@ -156,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFCE19481E75E17C001C18C4 /* Build configuration list for PBXNativeTarget "PRECISSwift tvOS" */;
 			buildPhases = (
+				FFCE19A51E75F0D8001C18C4 /* Lint Sources */,
 				FFCE193E1E75E17C001C18C4 /* Sources */,
 				FFCE193F1E75E17C001C18C4 /* Frameworks */,
 				FFCE19401E75E17C001C18C4 /* Headers */,
@@ -174,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFCE19551E75E195001C18C4 /* Build configuration list for PBXNativeTarget "PRECISSwift watchOS" */;
 			buildPhases = (
+				FFCE19A61E75F0E2001C18C4 /* Lint Sources */,
 				FFCE194B1E75E195001C18C4 /* Sources */,
 				FFCE194C1E75E195001C18C4 /* Frameworks */,
 				FFCE194D1E75E195001C18C4 /* Headers */,
@@ -270,11 +307,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FFCE19A31E75F097001C18C4 /* Lint Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then swiftlint; fi";
+		};
+		FFCE19A41E75F0CE001C18C4 /* Lint Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then swiftlint; fi";
+		};
+		FFCE19A51E75F0D8001C18C4 /* Lint Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then swiftlint; fi";
+		};
+		FFCE19A61E75F0E2001C18C4 /* Lint Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then swiftlint; fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFCE191E1E75E088001C18C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE199A1E75F060001C18C4 /* Profile.swift in Sources */,
+				FFCE199F1E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE199B1E75F060001C18C4 /* Profile.swift in Sources */,
+				FFCE19A01E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE199C1E75F060001C18C4 /* Profile.swift in Sources */,
+				FFCE19A11E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE199D1E75F060001C18C4 /* Profile.swift in Sources */,
+				FFCE19A21E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
