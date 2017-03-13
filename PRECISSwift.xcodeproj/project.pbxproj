@@ -15,6 +15,22 @@
 		FFCE19A01E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
 		FFCE19A11E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
 		FFCE19A21E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */; };
+		FFCE19A81E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */; };
+		FFCE19AA1E75FBAC001C18C4 /* OpaqueStringProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */; };
+		FFCE19AB1E75FBB0001C18C4 /* UsernameCaseMappedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */; };
+		FFCE19AC1E75FBB0001C18C4 /* UsernameCaseMappedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */; };
+		FFCE19AD1E75FBB1001C18C4 /* UsernameCaseMappedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */; };
+		FFCE19AE1E75FBB3001C18C4 /* OpaqueStringProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */; };
+		FFCE19AF1E75FBB3001C18C4 /* OpaqueStringProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */; };
+		FFCE19B01E75FBB4001C18C4 /* OpaqueStringProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */; };
+		FFCE19B21E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */; };
+		FFCE19B31E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */; };
+		FFCE19B41E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */; };
+		FFCE19B51E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */; };
+		FFCE19B71E75FF44001C18C4 /* NicknameProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */; };
+		FFCE19B81E75FF44001C18C4 /* NicknameProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */; };
+		FFCE19B91E75FF44001C18C4 /* NicknameProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */; };
+		FFCE19BA1E75FF44001C18C4 /* NicknameProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,10 @@
 		FFCE19501E75E195001C18C4 /* PRECISSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRECISSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCE19991E75F060001C18C4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeScalarExtensions.swift; sourceTree = "<group>"; };
+		FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameCaseMappedProfile.swift; sourceTree = "<group>"; };
+		FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpaqueStringProfile.swift; sourceTree = "<group>"; };
+		FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameCasePreservedProfile.swift; sourceTree = "<group>"; };
+		FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicknameProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +120,12 @@
 		FFCE19971E75F04A001C18C4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */,
+				FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */,
 				FFCE19991E75F060001C18C4 /* Profile.swift */,
+				FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */,
+				FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */,
 			);
-			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -111,7 +134,6 @@
 			children = (
 				FFCE199E1E75F07B001C18C4 /* UnicodeScalarExtensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -373,6 +395,10 @@
 			files = (
 				FFCE199A1E75F060001C18C4 /* Profile.swift in Sources */,
 				FFCE199F1E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
+				FFCE19A81E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift in Sources */,
+				FFCE19B71E75FF44001C18C4 /* NicknameProfile.swift in Sources */,
+				FFCE19AA1E75FBAC001C18C4 /* OpaqueStringProfile.swift in Sources */,
+				FFCE19B21E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +408,10 @@
 			files = (
 				FFCE199B1E75F060001C18C4 /* Profile.swift in Sources */,
 				FFCE19A01E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
+				FFCE19AB1E75FBB0001C18C4 /* UsernameCaseMappedProfile.swift in Sources */,
+				FFCE19B81E75FF44001C18C4 /* NicknameProfile.swift in Sources */,
+				FFCE19B01E75FBB4001C18C4 /* OpaqueStringProfile.swift in Sources */,
+				FFCE19B31E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +421,10 @@
 			files = (
 				FFCE199C1E75F060001C18C4 /* Profile.swift in Sources */,
 				FFCE19A11E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
+				FFCE19AC1E75FBB0001C18C4 /* UsernameCaseMappedProfile.swift in Sources */,
+				FFCE19B91E75FF44001C18C4 /* NicknameProfile.swift in Sources */,
+				FFCE19AF1E75FBB3001C18C4 /* OpaqueStringProfile.swift in Sources */,
+				FFCE19B41E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +434,10 @@
 			files = (
 				FFCE199D1E75F060001C18C4 /* Profile.swift in Sources */,
 				FFCE19A21E75F07B001C18C4 /* UnicodeScalarExtensions.swift in Sources */,
+				FFCE19AD1E75FBB1001C18C4 /* UsernameCaseMappedProfile.swift in Sources */,
+				FFCE19BA1E75FF44001C18C4 /* NicknameProfile.swift in Sources */,
+				FFCE19AE1E75FBB3001C18C4 /* OpaqueStringProfile.swift in Sources */,
+				FFCE19B51E75FD57001C18C4 /* UsernameCasePreservedProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
