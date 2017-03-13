@@ -78,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFCD6CB31E774E7700EB8671 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */,
+				FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */,
+				FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */,
+				FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
 		FFCE19191E75E088001C18C4 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +124,7 @@
 			children = (
 				FFCE19971E75F04A001C18C4 /* Core */,
 				FFCE19981E75F04E001C18C4 /* Extensions */,
+				FFCD6CB31E774E7700EB8671 /* Profiles */,
 			);
 			path = PRECISSwift;
 			sourceTree = "<group>";
@@ -120,11 +132,7 @@
 		FFCE19971E75F04A001C18C4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FFCE19B61E75FF44001C18C4 /* NicknameProfile.swift */,
-				FFCE19A91E75FBAC001C18C4 /* OpaqueStringProfile.swift */,
 				FFCE19991E75F060001C18C4 /* Profile.swift */,
-				FFCE19A71E75FAE7001C18C4 /* UsernameCaseMappedProfile.swift */,
-				FFCE19B11E75FD57001C18C4 /* UsernameCasePreservedProfile.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
