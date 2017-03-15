@@ -50,37 +50,30 @@ public protocol Profile {
 
 public extension Profile {
 
+	/// Ensures that the characters in a given string are allowed by the underlying
+	/// PRECIS string class.
+	///
+	/// - Parameter string: string for evaluation
+	/// - Throws: `ProfileError.invalidCodePointAtIndex` if a disallowed character is found
+	/// in the string.
 	public func prepareString(_ string: String) throws { // swiftlint:disable:this cyclomatic_complexity
 		let isIdentifierClass = baseClass == .identifierClass
 
 		try string.unicodeScalars.enumerated().forEach { index, scalar in
-			// If .cp. .in. Exceptions Then Exceptions(cp);
-			// Else If .cp. .in. BackwardCompatible Then BackwardCompatible(cp);
-			// Else If .cp. .in. Unassigned Then UNASSIGNED;
-			// Else If .cp. .in. ASCII7 Then PVALID;
-			// Else If .cp. .in. JoinControl Then CONTEXTJ;
-			// Else If .cp. .in. OldHangulJamo Then DISALLOWED;
-			// Else If .cp. .in. PrecisIgnorableProperties Then DISALLOWED;
-			// Else If .cp. .in. Controls Then DISALLOWED;
-			// Else If .cp. .in. HasCompat Then ID_DIS or FREE_PVAL;
-			// Else If .cp. .in. LetterDigits Then PVALID;
-			// Else If .cp. .in. OtherLetterDigits Then ID_DIS or FREE_PVAL;
-			// Else If .cp. .in. Spaces Then ID_DIS or FREE_PVAL;
-			// Else If .cp. .in. Symbols Then ID_DIS or FREE_PVAL;
-			// Else If .cp. .in. Punctuation Then ID_DIS or FREE_PVAL;
-			// Else DISALLOWED;
-
-			var isValid: Bool
+			// swiftlint:disable todo
+			let isValid: Bool
 			if scalar.isException {
-				isValid = true // TODO: check
-			} else if scalar.isBackwardsCompatible {
-				isValid = true // TODO: check
+				// TODO: add handling of contextual rules
+				isValid = scalar.isExceptionallyAllowed
+			} else if scalar.hasBackwardCompatibility {
+				isValid = scalar.isBackwardCompatible
 			} else if scalar.isUnassigned {
 				isValid = false
 			} else if scalar.isASCII7 {
 				isValid = true
 			} else if scalar.isJoinControl {
-				isValid = false// TODO: fix
+				// TODO: add handling of contextual rules
+				isValid = false
 			} else if scalar.isOldHangulJamo {
 				isValid = false
 			} else if scalar.isPrecisIgnorableProperty {
@@ -102,6 +95,7 @@ public extension Profile {
 			} else {
 				isValid = false
 			}
+			// swiftlint:enable todo
 
 			guard isValid else {
 				throw ProfileError.invalidCodePointAtIndex(scalar, index)
